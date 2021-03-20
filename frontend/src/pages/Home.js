@@ -1,0 +1,46 @@
+//external imports
+import React, { Fragment } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+
+//internal imports
+import homeHero from "../images/cta-background.jpg";
+
+class Home extends React.Component {
+  render() {
+    return (
+      <>
+        <Container className="hero">
+          <Row>
+            <Col className="welcome-section">
+              <h1>Heading One Here</h1>
+              <h2>Heading two here</h2>
+              <p className="hero-p">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <Button href="/contact">CONTACT</Button>
+            </Col>
+            <Col>
+              <img src={homeHero} />
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <Col>
+              <h2>Heading One Here</h2>
+              <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </Col>
+          </Row>
+     
+        </Container>
+        </>
+    );
+  }
+}
+
+export default Home;
